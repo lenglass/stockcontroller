@@ -21,4 +21,4 @@ RUN mkdir -p /opt && \
     rm -rf /tmp/* /var/cache/apk/*
 
 EXPOSE 8080
-ENTRYPOINT [ "/opt/tomcat/bin/startup.sh", "run" ]
+ENTRYPOINT [ "/opt/tomcat/bin/catalina.sh", "run" ]
