@@ -20,7 +20,8 @@ iPhone ⇔ JavaScript ⇔ インターネット ⇔ Tomcat ⇔ Java ⇔ MySQL
 [ダウンロード](https://docs.docker.com/toolbox/overview/)  
 設定などはデフォルトでOK  
 ただし、「git for windows」は上の手順でインストール済みなのでチェックを外す  
-Windows(32bit)だったら[こんな手順](https://www.niandc.co.jp/sol/tech/date20180316_1645.php)が必要らしい
+Windows(32bit)だったら[こんな手順](https://www.niandc.co.jp/sol/tech/date20180316_1645.php)が必要らしい  
+うまくvolumeをmountできないときの[設定](https://qiita.com/dojineko/items/f623894ef2436bef890e)（困ってなければ対応不要。vboxmanageはたぶんパス通ってないから、代わりにGUIで[こんな感じ](http://pineplanter.moo.jp/non-it-salaryman/2016/10/19/virtualbox-share-folder/)の画面操作で）
 
 1. Docker Imageの設定  
 イメージをつかむために、最初に[この連載](https://knowledge.sakura.ad.jp/13265/)を読んでおくといいかも。
@@ -51,8 +52,8 @@ https://id.atlassian.com/signup
 [ダウンロード](https://www.jetbrains.com/idea/)
 
 * SourceTree（バージョン管理ツール）  
-[ダウンロード](https://ja.atlassian.com/software/sourcetree)
-
+[ダウンロード](https://ja.atlassian.com/software/sourcetree)  
+[noreply設定](http://ryoichi0102.hatenablog.com/entry/2017/10/12/000713)も一応しておいた。
 
 ## 最初のコミットまで
 

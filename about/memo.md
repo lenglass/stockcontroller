@@ -58,14 +58,27 @@ Docker Toolbox
 Windows 10 pro 以外ではDocker for windowsが使えないので。
 https://docs.docker.com/toolbox/overview/#whats-in-the-box
 
+以下のような設定を以前したはずだけど、今見たらファイルが空になっていた。
+もしvolumeのmountがうまくできない場合は、この辺も見直すといいかも。
+docker-machine ssh
+vi /var/lib/boot2docker/bootlocal.sh
+mkdir -p /d/Master
+mount -t vboxsf -o defaults,iocharset=utf8,uid=1000,gid=50 d/Master /d/Master
+
 ## git
 後で細かくインストールするのだるいので
 https://qiita.com/toshi-click/items/dcf3dd48fdc74c91b409
 
-# tomcat
+## tomcat
 https://hacknote.jp/archives/20181/
 alpine, tomcat, mysql_jdbcは現時点での最新版を選択
 jdkはalpineにjdk8までしかなかったので、そのままで
 
-# Spring Boot
+## Spring Boot
 https://qiita.com/akiraabe/items/0ae812eb3a5b2288da3a
+
+# 後で使うかも
+
+## Docker 
+[dockerでvolumeをマウントしたときのファイルのowner問題](
+https://qiita.com/yohm/items/047b2e68d008ebb0f001)

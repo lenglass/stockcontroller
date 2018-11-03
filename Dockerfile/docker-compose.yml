@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+  tomcat:
+    build: ./tomcat
+    image: tomcat-image
+    container_name: tomcat-container
+    volumes:
+      - './webapps:/opt/tomcat/webapps'
+    ports:
+      - 18080:8080
