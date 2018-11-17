@@ -28,7 +28,7 @@
         $.ajax({                            // データ送信
           type: "POST",                     // GET or POST
           url: serverPath,                  // 宛先servletのパス
-          data: JSON.stringify(request),    // 送信データ
+          data: { jsonData: JSON.stringify(request) },    // 送信データ
           contentType: 'application/json',  // servletへ送信するデータの形式
           dataType: "JSON"                  // servletから受信するデータの形式
         }).done(function (data, status, xhr) {
